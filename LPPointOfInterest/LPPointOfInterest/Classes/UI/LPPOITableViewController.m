@@ -144,7 +144,7 @@
     // Loads the JSON file
     NSString* filepath = [[NSBundle mainBundle] pathForResource:@"pois" ofType:@"json"];
     NSAssert(filepath, @"ERROR: Filepath is incorrect.");
-    NSString* jsonString = [NSString stringWithContentsOfFile:filepath encoding:NSASCIIStringEncoding error:nil];
+    NSString* jsonString = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:nil];
     
     // Converts json string to dictionary
     [_poiListDictionary release];
@@ -255,8 +255,8 @@
     
     NSArray* section = [[self sortedSections] objectAtIndex:indexPath.section];
     NSDictionary* poiDict = [section objectAtIndex:indexPath.row];
-    
-    cell.textLabel.text = [poiDict stringForKey: @"name"];
+
+    cell.textLabel.text = [[poiDict stringForKey: @"name"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     cell.detailTextLabel.text = [poiDict stringForKey: @"type"];
     
     return cell;
@@ -271,7 +271,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // TODO: Handle poi tableview cell touch to push LPPOIDetailsViewController on the navigation controller stack
+    NSArray* section = [[self sortedSections] objectAtIndex:indexPath.section];
+    NSDictionary* poiDict = [section objectAtIndex:indexPath.row];
+    
+    LPPOIDetailsViewController* detailsVC = [[LPPOIDetailsViewController alloc] initWithDictionary: poiDict];
+    [[self navigationController] pushViewController:detailsVC animated:YES];
+    [detailsVC release];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 

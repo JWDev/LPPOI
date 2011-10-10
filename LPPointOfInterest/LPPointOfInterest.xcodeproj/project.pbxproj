@@ -10,8 +10,6 @@
 		C25D21E21442E5F7008F46D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25D21E11442E5F7008F46D4 /* UIKit.framework */; };
 		C25D21E41442E5F7008F46D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25D21E31442E5F7008F46D4 /* Foundation.framework */; };
 		C25D21E61442E5F7008F46D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25D21E51442E5F7008F46D4 /* CoreGraphics.framework */; };
-		C25D21EC1442E5F7008F46D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25D21EA1442E5F7008F46D4 /* InfoPlist.strings */; };
-		C25D21EF1442E5F7008F46D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D21EE1442E5F7008F46D4 /* main.m */; };
 		C25D21FD1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D21FC1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m */; };
 		C25D22001442E625008F46D4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25D21FE1442E625008F46D4 /* MainWindow.xib */; };
 		C25D22231442E709008F46D4 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22081442E709008F46D4 /* NSObject+SBJson.m */; };
@@ -30,6 +28,10 @@
 		C25D22351442E938008F46D4 /* LPPOIDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22321442E938008F46D4 /* LPPOIDetailsViewController.m */; };
 		C25D22361442E938008F46D4 /* LPPOITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22341442E938008F46D4 /* LPPOITableViewController.m */; };
 		C25D22391443487A008F46D4 /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D223814434879008F46D4 /* NSDictionary+Additions.m */; };
+		C25D226C1443734A008F46D4 /* pois.json in Resources */ = {isa = PBXBuildFile; fileRef = C25D226B1443734A008F46D4 /* pois.json */; };
+		C25D227014437395008F46D4 /* LPPointOfInterest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C25D226D14437395008F46D4 /* LPPointOfInterest-Info.plist */; };
+		C25D227114437395008F46D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D226F14437395008F46D4 /* main.m */; };
+		C25D2274144373A0008F46D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25D2272144373A0008F46D4 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +39,6 @@
 		C25D21E11442E5F7008F46D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C25D21E31442E5F7008F46D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C25D21E51442E5F7008F46D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C25D21E91442E5F7008F46D4 /* LPPointOfInterest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LPPointOfInterest-Info.plist"; sourceTree = "<group>"; };
-		C25D21EB1442E5F7008F46D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C25D21ED1442E5F7008F46D4 /* LPPointOfInterest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LPPointOfInterest-Prefix.pch"; sourceTree = "<group>"; };
-		C25D21EE1442E5F7008F46D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C25D21FB1442E60B008F46D4 /* LPPointOfInterestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPointOfInterestAppDelegate.h; sourceTree = "<group>"; };
 		C25D21FC1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPointOfInterestAppDelegate.m; sourceTree = "<group>"; };
 		C25D21FF1442E625008F46D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
@@ -77,6 +75,11 @@
 		C25D22341442E938008F46D4 /* LPPOITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPOITableViewController.m; sourceTree = "<group>"; };
 		C25D223714434879008F46D4 /* NSDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additions.h"; sourceTree = "<group>"; };
 		C25D223814434879008F46D4 /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
+		C25D226B1443734A008F46D4 /* pois.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pois.json; sourceTree = "<group>"; };
+		C25D226D14437395008F46D4 /* LPPointOfInterest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LPPointOfInterest-Info.plist"; sourceTree = "<group>"; };
+		C25D226E14437395008F46D4 /* LPPointOfInterest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LPPointOfInterest-Prefix.pch"; sourceTree = "<group>"; };
+		C25D226F14437395008F46D4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C25D2273144373A0008F46D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,7 @@
 				C25D21FB1442E60B008F46D4 /* LPPointOfInterestAppDelegate.h */,
 				C25D21FC1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m */,
 				C25D21FE1442E625008F46D4 /* MainWindow.xib */,
+				C25D226A1443734A008F46D4 /* Resources */,
 				C25D21E81442E5F7008F46D4 /* Supporting Files */,
 			);
 			path = LPPointOfInterest;
@@ -135,10 +139,10 @@
 		C25D21E81442E5F7008F46D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C25D21E91442E5F7008F46D4 /* LPPointOfInterest-Info.plist */,
-				C25D21EA1442E5F7008F46D4 /* InfoPlist.strings */,
-				C25D21ED1442E5F7008F46D4 /* LPPointOfInterest-Prefix.pch */,
-				C25D21EE1442E5F7008F46D4 /* main.m */,
+				C25D2272144373A0008F46D4 /* InfoPlist.strings */,
+				C25D226D14437395008F46D4 /* LPPointOfInterest-Info.plist */,
+				C25D226E14437395008F46D4 /* LPPointOfInterest-Prefix.pch */,
+				C25D226F14437395008F46D4 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -207,6 +211,14 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		C25D226A1443734A008F46D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C25D226B1443734A008F46D4 /* pois.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -257,8 +269,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25D21EC1442E5F7008F46D4 /* InfoPlist.strings in Resources */,
 				C25D22001442E625008F46D4 /* MainWindow.xib in Resources */,
+				C25D226C1443734A008F46D4 /* pois.json in Resources */,
+				C25D227014437395008F46D4 /* LPPointOfInterest-Info.plist in Resources */,
+				C25D2274144373A0008F46D4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C25D21EF1442E5F7008F46D4 /* main.m in Sources */,
 				C25D21FD1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m in Sources */,
 				C25D22231442E709008F46D4 /* NSObject+SBJson.m in Sources */,
 				C25D22241442E709008F46D4 /* SBJsonParser.m in Sources */,
@@ -287,26 +300,27 @@
 				C25D22351442E938008F46D4 /* LPPOIDetailsViewController.m in Sources */,
 				C25D22361442E938008F46D4 /* LPPOITableViewController.m in Sources */,
 				C25D22391443487A008F46D4 /* NSDictionary+Additions.m in Sources */,
+				C25D227114437395008F46D4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C25D21EA1442E5F7008F46D4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C25D21EB1442E5F7008F46D4 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		C25D21FE1442E625008F46D4 /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C25D21FF1442E625008F46D4 /* en */,
 			);
 			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C25D2272144373A0008F46D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C25D2273144373A0008F46D4 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
