@@ -8,21 +8,28 @@
 
 #import "LPPointOfInterestAppDelegate.h"
 
+#import "LPPOIMainMenuViewController.h"
 #import "LPPOITableViewController.h"
 
 @implementation LPPointOfInterestAppDelegate
 
 @synthesize window=_window;
-@synthesize poiTableViewController = _poiTableViewController;
 @synthesize navigationController = _navigationController;
+@synthesize mainMenuViewController = _mainMenuViewController;
+@synthesize poiTableViewController = _poiTableViewController;
+
 
 #pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Init view controllers
-    _poiTableViewController = [[LPPOITableViewController alloc] initWithNibName:nil bundle:nil];
-    _navigationController = [[UINavigationController alloc] initWithRootViewController: [self poiTableViewController]];
+//    _poiTableViewController = [[LPPOITableViewController alloc] initWithNibName:nil bundle:nil];
+//    _navigationController = [[UINavigationController alloc] initWithRootViewController: [self poiTableViewController]];
+    
+    _mainMenuViewController = [[LPPOIMainMenuViewController alloc] initWithNibName:nil bundle:nil];
+    _navigationController = [[UINavigationController alloc] initWithRootViewController: [self mainMenuViewController]];
+    
     self.window.rootViewController = [self navigationController];
     
     // Override point for customization after application launch.
@@ -71,6 +78,10 @@
 
 - (void)dealloc
 {
+    [_mainMenuViewController release];
+    [_poiTableViewController release];
+    [_navigationController release];
+    
     [_window release];
     [super dealloc];
 }

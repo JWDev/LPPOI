@@ -93,6 +93,7 @@
 {
     [super viewDidLoad];
     
+//    [[self navigationController] setNavigationBarHidden: NO];
     [self buildData];
 }
 
@@ -109,6 +110,17 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [[self navigationItem] setTitle: @"Points of Interest"];
+}
+
+//- (void) viewDidDisappear:(BOOL)animated
+//{
+//    [super viewDidDisappear:animated];
+//}
 
 #pragma mark - Build Data
 

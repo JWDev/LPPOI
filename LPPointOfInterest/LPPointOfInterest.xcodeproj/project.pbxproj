@@ -36,6 +36,13 @@
 		C25D229714438627008F46D4 /* LPPOIMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D229614438627008F46D4 /* LPPOIMapAnnotation.m */; };
 		C25D22991443908B008F46D4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = C25D22981443908B008F46D4 /* README.txt */; };
 		C25D229B144394EB008F46D4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C25D229A144394EA008F46D4 /* Default.png */; };
+		C25D229E14439A2B008F46D4 /* LPPOIMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D229D14439A2A008F46D4 /* LPPOIMainMenuViewController.m */; };
+		C25D22A314439CEB008F46D4 /* london1.png in Resources */ = {isa = PBXBuildFile; fileRef = C25D229F14439CEB008F46D4 /* london1.png */; };
+		C25D22A414439CEB008F46D4 /* london2.png in Resources */ = {isa = PBXBuildFile; fileRef = C25D22A014439CEB008F46D4 /* london2.png */; };
+		C25D22A514439CEB008F46D4 /* london3.png in Resources */ = {isa = PBXBuildFile; fileRef = C25D22A114439CEB008F46D4 /* london3.png */; };
+		C25D22A614439CEB008F46D4 /* london4.png in Resources */ = {isa = PBXBuildFile; fileRef = C25D22A214439CEB008F46D4 /* london4.png */; };
+		C25D22B11443A0EA008F46D4 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22B01443A0E9008F46D4 /* UIColor+Additions.m */; };
+		C25D22B31443A4BA008F46D4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25D22B21443A4BA008F46D4 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +98,15 @@
 		C25D229614438627008F46D4 /* LPPOIMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPOIMapAnnotation.m; sourceTree = "<group>"; };
 		C25D22981443908B008F46D4 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = ../../../README.txt; sourceTree = "<group>"; };
 		C25D229A144394EA008F46D4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C25D229C14439A29008F46D4 /* LPPOIMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPOIMainMenuViewController.h; sourceTree = "<group>"; };
+		C25D229D14439A2A008F46D4 /* LPPOIMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPOIMainMenuViewController.m; sourceTree = "<group>"; };
+		C25D229F14439CEB008F46D4 /* london1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = london1.png; sourceTree = "<group>"; };
+		C25D22A014439CEB008F46D4 /* london2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = london2.png; sourceTree = "<group>"; };
+		C25D22A114439CEB008F46D4 /* london3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = london3.png; sourceTree = "<group>"; };
+		C25D22A214439CEB008F46D4 /* london4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = london4.png; sourceTree = "<group>"; };
+		C25D22AF1443A0E9008F46D4 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		C25D22B01443A0E9008F46D4 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		C25D22B21443A4BA008F46D4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25D22B31443A4BA008F46D4 /* QuartzCore.framework in Frameworks */,
 				C25D2288144380CE008F46D4 /* MapKit.framework in Frameworks */,
 				C25D21E21442E5F7008F46D4 /* UIKit.framework in Frameworks */,
 				C25D21E41442E5F7008F46D4 /* Foundation.framework in Frameworks */,
@@ -129,6 +146,7 @@
 		C25D21E01442E5F7008F46D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C25D22B21443A4BA008F46D4 /* QuartzCore.framework */,
 				C25D2287144380CD008F46D4 /* MapKit.framework */,
 				C25D21E11442E5F7008F46D4 /* UIKit.framework */,
 				C25D21E31442E5F7008F46D4 /* Foundation.framework */,
@@ -178,6 +196,8 @@
 				C25D22211442E709008F46D4 /* LPDataParser.m */,
 				C25D223714434879008F46D4 /* NSDictionary+Additions.h */,
 				C25D223814434879008F46D4 /* NSDictionary+Additions.m */,
+				C25D22AF1443A0E9008F46D4 /* UIColor+Additions.h */,
+				C25D22B01443A0E9008F46D4 /* UIColor+Additions.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -217,6 +237,8 @@
 		C25D22301442E938008F46D4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C25D229C14439A29008F46D4 /* LPPOIMainMenuViewController.h */,
+				C25D229D14439A2A008F46D4 /* LPPOIMainMenuViewController.m */,
 				C25D22331442E938008F46D4 /* LPPOITableViewController.h */,
 				C25D22341442E938008F46D4 /* LPPOITableViewController.m */,
 				C25D22311442E938008F46D4 /* LPPOIDetailsViewController.h */,
@@ -232,6 +254,10 @@
 		C25D226A1443734A008F46D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C25D229F14439CEB008F46D4 /* london1.png */,
+				C25D22A014439CEB008F46D4 /* london2.png */,
+				C25D22A114439CEB008F46D4 /* london3.png */,
+				C25D22A214439CEB008F46D4 /* london4.png */,
 				C25D22981443908B008F46D4 /* README.txt */,
 				C25D226B1443734A008F46D4 /* pois.json */,
 			);
@@ -293,6 +319,10 @@
 				C25D228214437ECA008F46D4 /* InfoPlist.strings in Resources */,
 				C25D22991443908B008F46D4 /* README.txt in Resources */,
 				C25D229B144394EB008F46D4 /* Default.png in Resources */,
+				C25D22A314439CEB008F46D4 /* london1.png in Resources */,
+				C25D22A414439CEB008F46D4 /* london2.png in Resources */,
+				C25D22A514439CEB008F46D4 /* london3.png in Resources */,
+				C25D22A614439CEB008F46D4 /* london4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +353,8 @@
 				C25D22391443487A008F46D4 /* NSDictionary+Additions.m in Sources */,
 				C25D228614438001008F46D4 /* LPPOIMapViewController.m in Sources */,
 				C25D229714438627008F46D4 /* LPPOIMapAnnotation.m in Sources */,
+				C25D229E14439A2B008F46D4 /* LPPOIMainMenuViewController.m in Sources */,
+				C25D22B11443A0EA008F46D4 /* UIColor+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
