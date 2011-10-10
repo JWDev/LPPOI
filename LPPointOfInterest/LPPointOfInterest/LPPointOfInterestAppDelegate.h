@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LPPointOfInterestAppDelegate : NSObject <UIApplicationDelegate> {
+@class LPPOITableViewController;
 
+@interface LPPointOfInterestAppDelegate : NSObject <UIApplicationDelegate> 
+{
+    UINavigationController* _navigationController;
+    LPPOITableViewController* _poiTableViewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) UINavigationController* navigationController;
+@property (nonatomic, retain) LPPOITableViewController* poiTableViewController;
 
 @end

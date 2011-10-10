@@ -8,13 +8,23 @@
 
 #import "LPPointOfInterestAppDelegate.h"
 
+#import "LPPOITableViewController.h"
+
 @implementation LPPointOfInterestAppDelegate
 
-
 @synthesize window=_window;
+@synthesize poiTableViewController = _poiTableViewController;
+@synthesize navigationController = _navigationController;
+
+#pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Init view controllers
+    _poiTableViewController = [[LPPOITableViewController alloc] initWithNibName:nil bundle:nil];
+    _navigationController = [[UINavigationController alloc] initWithRootViewController: [self poiTableViewController]];
+    self.window.rootViewController = [self navigationController];
+    
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     return YES;
@@ -64,5 +74,15 @@
     [_window release];
     [super dealloc];
 }
+
+#pragma mark - Data Loading
+
+- (void) completeAppLaunch
+{
+
+}
+
+
+
 
 @end

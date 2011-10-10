@@ -14,7 +14,6 @@
 		C25D21EF1442E5F7008F46D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D21EE1442E5F7008F46D4 /* main.m */; };
 		C25D21FD1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D21FC1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m */; };
 		C25D22001442E625008F46D4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25D21FE1442E625008F46D4 /* MainWindow.xib */; };
-		C25D22221442E709008F46D4 /* LPFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22041442E709008F46D4 /* LPFeedManager.m */; };
 		C25D22231442E709008F46D4 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22081442E709008F46D4 /* NSObject+SBJson.m */; };
 		C25D22241442E709008F46D4 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D220B1442E709008F46D4 /* SBJsonParser.m */; };
 		C25D22251442E709008F46D4 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D220D1442E709008F46D4 /* SBJsonStreamParser.m */; };
@@ -28,6 +27,9 @@
 		C25D222D1442E709008F46D4 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D221D1442E709008F46D4 /* SBJsonUTF8Stream.m */; };
 		C25D222E1442E709008F46D4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D221F1442E709008F46D4 /* SBJsonWriter.m */; };
 		C25D222F1442E709008F46D4 /* LPDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22211442E709008F46D4 /* LPDataParser.m */; };
+		C25D22351442E938008F46D4 /* LPPOIDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22321442E938008F46D4 /* LPPOIDetailsViewController.m */; };
+		C25D22361442E938008F46D4 /* LPPOITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22341442E938008F46D4 /* LPPOITableViewController.m */; };
+		C25D22391443487A008F46D4 /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D223814434879008F46D4 /* NSDictionary+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +44,6 @@
 		C25D21FB1442E60B008F46D4 /* LPPointOfInterestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPointOfInterestAppDelegate.h; sourceTree = "<group>"; };
 		C25D21FC1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPointOfInterestAppDelegate.m; sourceTree = "<group>"; };
 		C25D21FF1442E625008F46D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		C25D22031442E709008F46D4 /* LPFeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFeedManager.h; sourceTree = "<group>"; };
-		C25D22041442E709008F46D4 /* LPFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFeedManager.m; sourceTree = "<group>"; };
 		C25D22071442E709008F46D4 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		C25D22081442E709008F46D4 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		C25D22091442E709008F46D4 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -71,6 +71,12 @@
 		C25D221F1442E709008F46D4 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		C25D22201442E709008F46D4 /* LPDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDataParser.h; sourceTree = "<group>"; };
 		C25D22211442E709008F46D4 /* LPDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDataParser.m; sourceTree = "<group>"; };
+		C25D22311442E938008F46D4 /* LPPOIDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPOIDetailsViewController.h; sourceTree = "<group>"; };
+		C25D22321442E938008F46D4 /* LPPOIDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPOIDetailsViewController.m; sourceTree = "<group>"; };
+		C25D22331442E938008F46D4 /* LPPOITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPOITableViewController.h; sourceTree = "<group>"; };
+		C25D22341442E938008F46D4 /* LPPOITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPOITableViewController.m; sourceTree = "<group>"; };
+		C25D223714434879008F46D4 /* NSDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additions.h"; sourceTree = "<group>"; };
+		C25D223814434879008F46D4 /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,19 +146,10 @@
 		C25D22011442E709008F46D4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C25D22021442E709008F46D4 /* FeedManagement */,
+				C25D22301442E938008F46D4 /* UI */,
 				C25D22051442E709008F46D4 /* Utilities */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		C25D22021442E709008F46D4 /* FeedManagement */ = {
-			isa = PBXGroup;
-			children = (
-				C25D22031442E709008F46D4 /* LPFeedManager.h */,
-				C25D22041442E709008F46D4 /* LPFeedManager.m */,
-			);
-			path = FeedManagement;
 			sourceTree = "<group>";
 		};
 		C25D22051442E709008F46D4 /* Utilities */ = {
@@ -161,6 +158,8 @@
 				C25D22061442E709008F46D4 /* JSON */,
 				C25D22201442E709008F46D4 /* LPDataParser.h */,
 				C25D22211442E709008F46D4 /* LPDataParser.m */,
+				C25D223714434879008F46D4 /* NSDictionary+Additions.h */,
+				C25D223814434879008F46D4 /* NSDictionary+Additions.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -195,6 +194,17 @@
 				C25D221F1442E709008F46D4 /* SBJsonWriter.m */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		C25D22301442E938008F46D4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C25D22331442E938008F46D4 /* LPPOITableViewController.h */,
+				C25D22341442E938008F46D4 /* LPPOITableViewController.m */,
+				C25D22311442E938008F46D4 /* LPPOIDetailsViewController.h */,
+				C25D22321442E938008F46D4 /* LPPOIDetailsViewController.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +271,6 @@
 			files = (
 				C25D21EF1442E5F7008F46D4 /* main.m in Sources */,
 				C25D21FD1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m in Sources */,
-				C25D22221442E709008F46D4 /* LPFeedManager.m in Sources */,
 				C25D22231442E709008F46D4 /* NSObject+SBJson.m in Sources */,
 				C25D22241442E709008F46D4 /* SBJsonParser.m in Sources */,
 				C25D22251442E709008F46D4 /* SBJsonStreamParser.m in Sources */,
@@ -275,6 +284,9 @@
 				C25D222D1442E709008F46D4 /* SBJsonUTF8Stream.m in Sources */,
 				C25D222E1442E709008F46D4 /* SBJsonWriter.m in Sources */,
 				C25D222F1442E709008F46D4 /* LPDataParser.m in Sources */,
+				C25D22351442E938008F46D4 /* LPPOIDetailsViewController.m in Sources */,
+				C25D22361442E938008F46D4 /* LPPOITableViewController.m in Sources */,
+				C25D22391443487A008F46D4 /* NSDictionary+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
