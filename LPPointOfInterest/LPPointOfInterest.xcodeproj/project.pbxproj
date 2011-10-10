@@ -34,6 +34,8 @@
 		C25D228614438001008F46D4 /* LPPOIMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D228514438001008F46D4 /* LPPOIMapViewController.m */; };
 		C25D2288144380CE008F46D4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25D2287144380CD008F46D4 /* MapKit.framework */; };
 		C25D229714438627008F46D4 /* LPPOIMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D229614438627008F46D4 /* LPPOIMapAnnotation.m */; };
+		C25D22991443908B008F46D4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = C25D22981443908B008F46D4 /* README.txt */; };
+		C25D229B144394EB008F46D4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C25D229A144394EA008F46D4 /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +89,8 @@
 		C25D2287144380CD008F46D4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C25D229514438626008F46D4 /* LPPOIMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPOIMapAnnotation.h; sourceTree = "<group>"; };
 		C25D229614438627008F46D4 /* LPPOIMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPOIMapAnnotation.m; sourceTree = "<group>"; };
+		C25D22981443908B008F46D4 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = ../../../README.txt; sourceTree = "<group>"; };
+		C25D229A144394EA008F46D4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		C25D21D21442E5F7008F46D4 = {
 			isa = PBXGroup;
 			children = (
+				C25D229A144394EA008F46D4 /* Default.png */,
 				C25D21E71442E5F7008F46D4 /* LPPointOfInterest */,
 				C25D21E01442E5F7008F46D4 /* Frameworks */,
 				C25D21DE1442E5F7008F46D4 /* Products */,
@@ -227,6 +232,7 @@
 		C25D226A1443734A008F46D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C25D22981443908B008F46D4 /* README.txt */,
 				C25D226B1443734A008F46D4 /* pois.json */,
 			);
 			path = Resources;
@@ -285,6 +291,8 @@
 				C25D22001442E625008F46D4 /* MainWindow.xib in Resources */,
 				C25D226C1443734A008F46D4 /* pois.json in Resources */,
 				C25D228214437ECA008F46D4 /* InfoPlist.strings in Resources */,
+				C25D22991443908B008F46D4 /* README.txt in Resources */,
+				C25D229B144394EB008F46D4 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

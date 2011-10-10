@@ -19,8 +19,18 @@ LPPointOfInterest - Project code base directory containing all project resources
 --------------------------
 
 2.1 JSON Framework
-
 Code used for JSON parsing can be found at http://code.google.com/p/json-framework/ and is covered under the BSD License.
+
+
+3. Images Used
+--------------
+
+3.1 Splash Screen
+Taken from Lonely Planet - London application, which I modified to add the prefix "JW".  If this needs to be removed for
+copyright reasons, please let me know.
+
+
+
 
 
 
