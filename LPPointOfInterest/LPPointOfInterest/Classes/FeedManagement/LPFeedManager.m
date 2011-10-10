@@ -8,7 +8,6 @@
 
 #import "LPFeedManager.h"
 
-#import "LPCoreDataManager.h"
 #import "LPDataParser.h"
 
 #pragma mark -
@@ -95,28 +94,10 @@ static LPFeedManager* sharedInstance = nil;
     NSDictionary* poiListDictionary = [LPDataParser dictionaryFromJSONString:jsonString];
 //    NSLog(@"poiDictionary = %@", poiDictionary);
     
-    // TODO: Check if this is really necessary.  Might be overkill for the app.
-    // Writes dictionary to core data
-    [self savePOIs: poiListDictionary];
-    
     // Notify front end that data loaded
     // TODO: Check if this step is really needed since the NSFetchedResultsControllerDelegate methods should take care of this.
 }
 
-- (void) savePOIs:(NSDictionary *)poiListDictionary
-{
-    LPCoreDataManager* coreDataManager = [LPCoreDataManager sharedInstance];
 
-    // Go through list of pois and write each individual one to the database
-    NSUInteger poiIndex = 0;
-    for (NSDictionary* poiDict in poiListDictionary) {
-//        NSLog(@"poiDict = %@", poiDict);
-        [coreDataManager writePOI: poiDict index:poiIndex];
-        poiIndex++;
-    }
-    
-    // Commit write to database
-    [coreDataManager saveContext];
-}
 
 @end
