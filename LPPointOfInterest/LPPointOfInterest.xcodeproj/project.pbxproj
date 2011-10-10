@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C25D21E21442E5F7008F46D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25D21E11442E5F7008F46D4 /* UIKit.framework */; };
+		C25D21E41442E5F7008F46D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25D21E31442E5F7008F46D4 /* Foundation.framework */; };
+		C25D21E61442E5F7008F46D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25D21E51442E5F7008F46D4 /* CoreGraphics.framework */; };
+		C25D21EC1442E5F7008F46D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25D21EA1442E5F7008F46D4 /* InfoPlist.strings */; };
+		C25D21EF1442E5F7008F46D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D21EE1442E5F7008F46D4 /* main.m */; };
+		C25D21FD1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D21FC1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m */; };
+		C25D22001442E625008F46D4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25D21FE1442E625008F46D4 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C25D21DD1442E5F7008F46D4 /* LPPointOfInterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPPointOfInterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25D21E11442E5F7008F46D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C25D21E31442E5F7008F46D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C25D21E51442E5F7008F46D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C25D21E91442E5F7008F46D4 /* LPPointOfInterest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LPPointOfInterest-Info.plist"; sourceTree = "<group>"; };
+		C25D21EB1442E5F7008F46D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C25D21ED1442E5F7008F46D4 /* LPPointOfInterest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LPPointOfInterest-Prefix.pch"; sourceTree = "<group>"; };
+		C25D21EE1442E5F7008F46D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C25D21FB1442E60B008F46D4 /* LPPointOfInterestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPointOfInterestAppDelegate.h; sourceTree = "<group>"; };
+		C25D21FC1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPointOfInterestAppDelegate.m; sourceTree = "<group>"; };
+		C25D21FF1442E625008F46D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C25D21DA1442E5F7008F46D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25D21E21442E5F7008F46D4 /* UIKit.framework in Frameworks */,
+				C25D21E41442E5F7008F46D4 /* Foundation.framework in Frameworks */,
+				C25D21E61442E5F7008F46D4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C25D21D21442E5F7008F46D4 = {
+			isa = PBXGroup;
+			children = (
+				C25D21E71442E5F7008F46D4 /* LPPointOfInterest */,
+				C25D21E01442E5F7008F46D4 /* Frameworks */,
+				C25D21DE1442E5F7008F46D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C25D21DE1442E5F7008F46D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C25D21DD1442E5F7008F46D4 /* LPPointOfInterest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C25D21E01442E5F7008F46D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C25D21E11442E5F7008F46D4 /* UIKit.framework */,
+				C25D21E31442E5F7008F46D4 /* Foundation.framework */,
+				C25D21E51442E5F7008F46D4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C25D21E71442E5F7008F46D4 /* LPPointOfInterest */ = {
+			isa = PBXGroup;
+			children = (
+				C25D21FB1442E60B008F46D4 /* LPPointOfInterestAppDelegate.h */,
+				C25D21FC1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m */,
+				C25D21FE1442E625008F46D4 /* MainWindow.xib */,
+				C25D21E81442E5F7008F46D4 /* Supporting Files */,
+			);
+			path = LPPointOfInterest;
+			sourceTree = "<group>";
+		};
+		C25D21E81442E5F7008F46D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C25D21E91442E5F7008F46D4 /* LPPointOfInterest-Info.plist */,
+				C25D21EA1442E5F7008F46D4 /* InfoPlist.strings */,
+				C25D21ED1442E5F7008F46D4 /* LPPointOfInterest-Prefix.pch */,
+				C25D21EE1442E5F7008F46D4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C25D21DC1442E5F7008F46D4 /* LPPointOfInterest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C25D21F81442E5F7008F46D4 /* Build configuration list for PBXNativeTarget "LPPointOfInterest" */;
+			buildPhases = (
+				C25D21D91442E5F7008F46D4 /* Sources */,
+				C25D21DA1442E5F7008F46D4 /* Frameworks */,
+				C25D21DB1442E5F7008F46D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LPPointOfInterest;
+			productName = LPPointOfInterest;
+			productReference = C25D21DD1442E5F7008F46D4 /* LPPointOfInterest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C25D21D41442E5F7008F46D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Team Pixel";
+			};
+			buildConfigurationList = C25D21D71442E5F7008F46D4 /* Build configuration list for PBXProject "LPPointOfInterest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C25D21D21442E5F7008F46D4;
+			productRefGroup = C25D21DE1442E5F7008F46D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C25D21DC1442E5F7008F46D4 /* LPPointOfInterest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C25D21DB1442E5F7008F46D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25D21EC1442E5F7008F46D4 /* InfoPlist.strings in Resources */,
+				C25D22001442E625008F46D4 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C25D21D91442E5F7008F46D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25D21EF1442E5F7008F46D4 /* main.m in Sources */,
+				C25D21FD1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C25D21EA1442E5F7008F46D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C25D21EB1442E5F7008F46D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C25D21FE1442E625008F46D4 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C25D21FF1442E625008F46D4 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C25D21F61442E5F7008F46D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C25D21F71442E5F7008F46D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C25D21F91442E5F7008F46D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LPPointOfInterest/LPPointOfInterest-Prefix.pch";
+				INFOPLIST_FILE = "LPPointOfInterest/LPPointOfInterest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C25D21FA1442E5F7008F46D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LPPointOfInterest/LPPointOfInterest-Prefix.pch";
+				INFOPLIST_FILE = "LPPointOfInterest/LPPointOfInterest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C25D21D71442E5F7008F46D4 /* Build configuration list for PBXProject "LPPointOfInterest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25D21F61442E5F7008F46D4 /* Debug */,
+				C25D21F71442E5F7008F46D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C25D21F81442E5F7008F46D4 /* Build configuration list for PBXNativeTarget "LPPointOfInterest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25D21F91442E5F7008F46D4 /* Debug */,
+				C25D21FA1442E5F7008F46D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C25D21D41442E5F7008F46D4 /* Project object */;
+}
