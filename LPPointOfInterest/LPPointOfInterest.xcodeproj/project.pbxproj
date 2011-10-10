@@ -29,9 +29,11 @@
 		C25D22361442E938008F46D4 /* LPPOITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22341442E938008F46D4 /* LPPOITableViewController.m */; };
 		C25D22391443487A008F46D4 /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D223814434879008F46D4 /* NSDictionary+Additions.m */; };
 		C25D226C1443734A008F46D4 /* pois.json in Resources */ = {isa = PBXBuildFile; fileRef = C25D226B1443734A008F46D4 /* pois.json */; };
-		C25D227014437395008F46D4 /* LPPointOfInterest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C25D226D14437395008F46D4 /* LPPointOfInterest-Info.plist */; };
-		C25D227114437395008F46D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D226F14437395008F46D4 /* main.m */; };
-		C25D2274144373A0008F46D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25D2272144373A0008F46D4 /* InfoPlist.strings */; };
+		C25D228214437ECA008F46D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C25D228014437ECA008F46D4 /* InfoPlist.strings */; };
+		C25D228314437EFC008F46D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D226F14437395008F46D4 /* main.m */; };
+		C25D228614438001008F46D4 /* LPPOIMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D228514438001008F46D4 /* LPPOIMapViewController.m */; };
+		C25D2288144380CE008F46D4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25D2287144380CD008F46D4 /* MapKit.framework */; };
+		C25D229714438627008F46D4 /* LPPOIMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D229614438627008F46D4 /* LPPOIMapAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,7 +81,12 @@
 		C25D226D14437395008F46D4 /* LPPointOfInterest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LPPointOfInterest-Info.plist"; sourceTree = "<group>"; };
 		C25D226E14437395008F46D4 /* LPPointOfInterest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LPPointOfInterest-Prefix.pch"; sourceTree = "<group>"; };
 		C25D226F14437395008F46D4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C25D2273144373A0008F46D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C25D228114437ECA008F46D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C25D228414438000008F46D4 /* LPPOIMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPOIMapViewController.h; sourceTree = "<group>"; };
+		C25D228514438001008F46D4 /* LPPOIMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPOIMapViewController.m; sourceTree = "<group>"; };
+		C25D2287144380CD008F46D4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C25D229514438626008F46D4 /* LPPOIMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPOIMapAnnotation.h; sourceTree = "<group>"; };
+		C25D229614438627008F46D4 /* LPPOIMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPOIMapAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25D2288144380CE008F46D4 /* MapKit.framework in Frameworks */,
 				C25D21E21442E5F7008F46D4 /* UIKit.framework in Frameworks */,
 				C25D21E41442E5F7008F46D4 /* Foundation.framework in Frameworks */,
 				C25D21E61442E5F7008F46D4 /* CoreGraphics.framework in Frameworks */,
@@ -116,6 +124,7 @@
 		C25D21E01442E5F7008F46D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C25D2287144380CD008F46D4 /* MapKit.framework */,
 				C25D21E11442E5F7008F46D4 /* UIKit.framework */,
 				C25D21E31442E5F7008F46D4 /* Foundation.framework */,
 				C25D21E51442E5F7008F46D4 /* CoreGraphics.framework */,
@@ -139,7 +148,7 @@
 		C25D21E81442E5F7008F46D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C25D2272144373A0008F46D4 /* InfoPlist.strings */,
+				C25D228014437ECA008F46D4 /* InfoPlist.strings */,
 				C25D226D14437395008F46D4 /* LPPointOfInterest-Info.plist */,
 				C25D226E14437395008F46D4 /* LPPointOfInterest-Prefix.pch */,
 				C25D226F14437395008F46D4 /* main.m */,
@@ -207,6 +216,10 @@
 				C25D22341442E938008F46D4 /* LPPOITableViewController.m */,
 				C25D22311442E938008F46D4 /* LPPOIDetailsViewController.h */,
 				C25D22321442E938008F46D4 /* LPPOIDetailsViewController.m */,
+				C25D228414438000008F46D4 /* LPPOIMapViewController.h */,
+				C25D228514438001008F46D4 /* LPPOIMapViewController.m */,
+				C25D229514438626008F46D4 /* LPPOIMapAnnotation.h */,
+				C25D229614438627008F46D4 /* LPPOIMapAnnotation.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -271,8 +284,7 @@
 			files = (
 				C25D22001442E625008F46D4 /* MainWindow.xib in Resources */,
 				C25D226C1443734A008F46D4 /* pois.json in Resources */,
-				C25D227014437395008F46D4 /* LPPointOfInterest-Info.plist in Resources */,
-				C25D2274144373A0008F46D4 /* InfoPlist.strings in Resources */,
+				C25D228214437ECA008F46D4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25D228314437EFC008F46D4 /* main.m in Sources */,
 				C25D21FD1442E60B008F46D4 /* LPPointOfInterestAppDelegate.m in Sources */,
 				C25D22231442E709008F46D4 /* NSObject+SBJson.m in Sources */,
 				C25D22241442E709008F46D4 /* SBJsonParser.m in Sources */,
@@ -300,7 +313,8 @@
 				C25D22351442E938008F46D4 /* LPPOIDetailsViewController.m in Sources */,
 				C25D22361442E938008F46D4 /* LPPOITableViewController.m in Sources */,
 				C25D22391443487A008F46D4 /* NSDictionary+Additions.m in Sources */,
-				C25D227114437395008F46D4 /* main.m in Sources */,
+				C25D228614438001008F46D4 /* LPPOIMapViewController.m in Sources */,
+				C25D229714438627008F46D4 /* LPPOIMapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,10 +329,10 @@
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		C25D2272144373A0008F46D4 /* InfoPlist.strings */ = {
+		C25D228014437ECA008F46D4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C25D2273144373A0008F46D4 /* en */,
+				C25D228114437ECA008F46D4 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

@@ -8,6 +8,7 @@
 
 #import "LPPOIDetailsViewController.h"
 
+#import "LPPOIMapViewController.h"
 #import "NSDictionary+Additions.h"
 
 #import <QuartzCore/QuartzCore.h>
@@ -23,6 +24,8 @@
 
 - (UILabel *) titleLabel:(NSString *)title atPoint:(CGPoint)origin;
 - (UILabel *) textLabel:(NSString *)text atPoint:(CGPoint)origin;
+
+- (void) mapButtonSelected:(UIButton *)button;
 @end
 
 #pragma mark -
@@ -49,7 +52,13 @@ CGFloat const kTextLabelX = 100.0f;
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        // Add map button
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle: NSLocalizedString(@"Map", @"Map")
+                                                                                  style: UIBarButtonItemStylePlain
+                                                                                 target: self
+                                                                                 action: @selector(mapButtonSelected:)];
+        
+        [[self navigationItem] setTitle:@"Point of Interest"];
     }
     return self;
 }
@@ -223,5 +232,15 @@ CGFloat const kTextLabelX = 100.0f;
     return label;
 }
 
+#pragma mark - Button Actions
+
+- (void) mapButtonSelected:(UIButton *)button
+{
+    NSLog(@"mapButtonSelected");
+    
+    LPPOIMapViewController* mapVC = [[LPPOIMapViewController alloc] initWithDictionary:[self dataDict]];
+    [[self navigationController] pushViewController:mapVC animated:YES];
+    [mapVC release];
+}
 
 @end
