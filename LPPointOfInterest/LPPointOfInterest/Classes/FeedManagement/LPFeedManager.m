@@ -12,7 +12,7 @@
 
 #pragma mark -
 @interface LPFeedManager ()
-- (void) savePOIs:(NSDictionary *)poiDictionary;
+
 @end
 
 
@@ -92,7 +92,7 @@ static LPFeedManager* sharedInstance = nil;
     
     // Converts json string to dictionary
     NSDictionary* poiListDictionary = [LPDataParser dictionaryFromJSONString:jsonString];
-//    NSLog(@"poiDictionary = %@", poiDictionary);
+    NSLog(@"poiListDictionary = %@", poiListDictionary);
     
     // Notify front end that data loaded
     // TODO: Check if this step is really needed since the NSFetchedResultsControllerDelegate methods should take care of this.
