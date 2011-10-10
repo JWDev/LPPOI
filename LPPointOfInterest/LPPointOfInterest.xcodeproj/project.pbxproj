@@ -43,6 +43,7 @@
 		C25D22A614439CEB008F46D4 /* london4.png in Resources */ = {isa = PBXBuildFile; fileRef = C25D22A214439CEB008F46D4 /* london4.png */; };
 		C25D22B11443A0EA008F46D4 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22B01443A0E9008F46D4 /* UIColor+Additions.m */; };
 		C25D22B31443A4BA008F46D4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25D22B21443A4BA008F46D4 /* QuartzCore.framework */; };
+		C25D22CA1443AEB2008F46D4 /* LPPOICreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22C91443AEAE008F46D4 /* LPPOICreditsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,8 @@
 		C25D22AF1443A0E9008F46D4 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
 		C25D22B01443A0E9008F46D4 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
 		C25D22B21443A4BA008F46D4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C25D22C81443AEAD008F46D4 /* LPPOICreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPOICreditsViewController.h; sourceTree = "<group>"; };
+		C25D22C91443AEAE008F46D4 /* LPPOICreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPOICreditsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +250,8 @@
 				C25D228514438001008F46D4 /* LPPOIMapViewController.m */,
 				C25D229514438626008F46D4 /* LPPOIMapAnnotation.h */,
 				C25D229614438627008F46D4 /* LPPOIMapAnnotation.m */,
+				C25D22C81443AEAD008F46D4 /* LPPOICreditsViewController.h */,
+				C25D22C91443AEAE008F46D4 /* LPPOICreditsViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -254,12 +259,12 @@
 		C25D226A1443734A008F46D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C25D22981443908B008F46D4 /* README.txt */,
+				C25D226B1443734A008F46D4 /* pois.json */,
 				C25D229F14439CEB008F46D4 /* london1.png */,
 				C25D22A014439CEB008F46D4 /* london2.png */,
 				C25D22A114439CEB008F46D4 /* london3.png */,
 				C25D22A214439CEB008F46D4 /* london4.png */,
-				C25D22981443908B008F46D4 /* README.txt */,
-				C25D226B1443734A008F46D4 /* pois.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -355,6 +360,7 @@
 				C25D229714438627008F46D4 /* LPPOIMapAnnotation.m in Sources */,
 				C25D229E14439A2B008F46D4 /* LPPOIMainMenuViewController.m in Sources */,
 				C25D22B11443A0EA008F46D4 /* UIColor+Additions.m in Sources */,
+				C25D22CA1443AEB2008F46D4 /* LPPOICreditsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

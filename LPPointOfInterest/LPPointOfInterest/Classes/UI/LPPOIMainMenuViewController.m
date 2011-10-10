@@ -8,7 +8,9 @@
 
 #import "LPPOIMainMenuViewController.h"
 
+#import "LPPOICreditsViewController.h"
 #import "LPPOITableViewController.h"
+
 #import "UIColor+Additions.h"
 #import <QuartzCore/QuartzCore.h>
 
@@ -163,11 +165,16 @@ CGFloat const kTimerDuration = 3.0f;
 
     LPPOITableViewController* poiTableViewController = [[LPPOITableViewController alloc] initWithNibName:nil bundle:nil];
     [[self navigationController] pushViewController:poiTableViewController animated:YES];
+    [poiTableViewController release];
 }
 
 - (void) creditsButtonPressed: (UIButton *)button
 {
-    NSLog(@"creditsButtonPressed");
+//    NSLog(@"creditsButtonPressed");
+    
+    LPPOICreditsViewController* poiCreditVC = [[LPPOICreditsViewController alloc] initWithNibName:nil bundle:nil];
+    [[self navigationController] pushViewController:poiCreditVC animated:YES];
+    [poiCreditVC release];
 }
 
 #pragma mark - Timer Actions

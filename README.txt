@@ -30,7 +30,8 @@ Taken from Lonely Planet - London application, which I modified to add the prefi
 copyright reasons, please let me know.
 
 
-
+3.2 Main Menu
+Images taken from general Google search for "London".  Took 4 decent landscape images and resized them to 320x240.
 
 
 
