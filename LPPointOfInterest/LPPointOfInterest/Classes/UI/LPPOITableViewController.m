@@ -126,19 +126,6 @@
 
 - (void) buildData
 {
-    // TODO: Uncomment when to do optimizing
-//    BOOL dataLoaded = [[[NSUserDefaults standardUserDefaults] objectForKey:kDataLoaded] boolValue];
-//    if (dataLoaded == NO) {
-//        
-//        // Load json data into a dictionary
-//        [_poiListDictionary release];
-//        _poiListDictionary = nil;
-//        
-//        [self setPoiListDictionary: [self buildPoiListDictionary]];
-//        
-//        // Organize dictionary into sectional data
-//    }
-    
     // TODO: Fade in spinner and black overlay
     
     // Load json data and turn it into a dictionary, then sections array

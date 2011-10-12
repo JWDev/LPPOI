@@ -44,6 +44,7 @@
 		C25D22B11443A0EA008F46D4 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22B01443A0E9008F46D4 /* UIColor+Additions.m */; };
 		C25D22B31443A4BA008F46D4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25D22B21443A4BA008F46D4 /* QuartzCore.framework */; };
 		C25D22CA1443AEB2008F46D4 /* LPPOICreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D22C91443AEAE008F46D4 /* LPPOICreditsViewController.m */; };
+		C25E55D9144559100030971B /* LPStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C25E55D8144559100030971B /* LPStyleManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,8 @@
 		C25D22B21443A4BA008F46D4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C25D22C81443AEAD008F46D4 /* LPPOICreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPOICreditsViewController.h; sourceTree = "<group>"; };
 		C25D22C91443AEAE008F46D4 /* LPPOICreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPOICreditsViewController.m; sourceTree = "<group>"; };
+		C25E55D7144559100030971B /* LPStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPStyleManager.h; sourceTree = "<group>"; };
+		C25E55D8144559100030971B /* LPStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPStyleManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +200,8 @@
 				C25D22061442E709008F46D4 /* JSON */,
 				C25D22201442E709008F46D4 /* LPDataParser.h */,
 				C25D22211442E709008F46D4 /* LPDataParser.m */,
+				C25E55D7144559100030971B /* LPStyleManager.h */,
+				C25E55D8144559100030971B /* LPStyleManager.m */,
 				C25D223714434879008F46D4 /* NSDictionary+Additions.h */,
 				C25D223814434879008F46D4 /* NSDictionary+Additions.m */,
 				C25D22AF1443A0E9008F46D4 /* UIColor+Additions.h */,
@@ -361,6 +366,7 @@
 				C25D229E14439A2B008F46D4 /* LPPOIMainMenuViewController.m in Sources */,
 				C25D22B11443A0EA008F46D4 /* UIColor+Additions.m in Sources */,
 				C25D22CA1443AEB2008F46D4 /* LPPOICreditsViewController.m in Sources */,
+				C25E55D9144559100030971B /* LPStyleManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +473,7 @@
 				C25D21FA1442E5F7008F46D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

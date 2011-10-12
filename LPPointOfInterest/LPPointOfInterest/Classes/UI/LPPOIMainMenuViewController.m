@@ -10,8 +10,8 @@
 
 #import "LPPOICreditsViewController.h"
 #import "LPPOITableViewController.h"
+#import "LPStyleManager.h"
 
-#import "UIColor+Additions.h"
 #import <QuartzCore/QuartzCore.h>
 
 #pragma mark -
@@ -46,7 +46,7 @@ CGFloat const kTimerDuration = 3.0f;
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Customize view
-        [[self view] setBackgroundColor: [UIColor colorWithHexString: @"0x113450" alpha:1.0]];
+        [[self view] setBackgroundColor: [LPStyleManager colorBackground]];
         
         // Add top image area
         UIImage* image = [self nextImage];
@@ -122,7 +122,7 @@ CGFloat const kTimerDuration = 3.0f;
     
     // Setup navigation bar
     [[self navigationItem] setTitle: @"London"];
-    [[[self navigationController] navigationBar] setTintColor:[UIColor colorWithHexString:@"0x113450" alpha:1.0f]];
+    [[[self navigationController] navigationBar] setTintColor:[LPStyleManager colorBackground]];
     
     // Setup the timer
     if ([self timer] == nil) {
@@ -149,10 +149,10 @@ CGFloat const kTimerDuration = 3.0f;
     [button setFrame: CGRectMake(origin.x, origin.y, kButtonWidth, kButtonHeight)];
     [button setTitle:text forState:UIControlStateNormal];
     [button setTitle:text  forState:UIControlStateSelected];
-    [button setTitleColor:[UIColor colorWithHexString:@"0x17476D" alpha:1.0] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor yellowColor] forState:UIControlStateSelected];
+    [button setTitleColor:[LPStyleManager colorButtonNormalTitle] forState:UIControlStateNormal];
+    [button setTitleColor:[LPStyleManager colorButtonSelectedTitle] forState:UIControlStateSelected];
     [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
-    [[button titleLabel] setFont: [UIFont fontWithName:@"Helvetica-Bold" size:24]];
+    [[button titleLabel] setFont: [LPStyleManager fontButtonTitle]];
     
     return button;
 }

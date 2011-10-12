@@ -7,7 +7,7 @@
 //
 
 #import "LPPOICreditsViewController.h"
-#import "UIColor+Additions.h"
+#import "LPStyleManager.h"
 
 @implementation LPPOICreditsViewController
 
@@ -20,20 +20,20 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [[self view] setBackgroundColor: [UIColor colorWithHexString:@"0x113450" alpha:1.0]];
+        [[self view] setBackgroundColor: [LPStyleManager colorBackground]];
         
         _nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 100, 240, 40)];
         [[self nameLabel] setBackgroundColor: [UIColor clearColor]];
         [[self nameLabel] setText: @"Joshua Worby"];
-        [[self nameLabel] setTextColor: [UIColor whiteColor]];
-        [[self nameLabel] setFont: [UIFont fontWithName:@"Helvetica-Bold" size:28]];
+        [[self nameLabel] setTextColor: [LPStyleManager colorCreditsTitle]];
+        [[self nameLabel] setFont: [LPStyleManager fontCreditsTitle]];
         [[self nameLabel] setTextAlignment: UITextAlignmentCenter];
         
         _copyrightDateLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 140, 240, 40)];
         [[self copyrightDateLabel] setBackgroundColor: [UIColor clearColor]];
         [[self copyrightDateLabel] setText: @"Copyright 2011."];
-        [[self copyrightDateLabel] setTextColor: [UIColor whiteColor]];
-        [[self copyrightDateLabel] setFont: [UIFont fontWithName:@"Helvetica" size:14]];
+        [[self copyrightDateLabel] setTextColor: [LPStyleManager colorCreditsText]];
+        [[self copyrightDateLabel] setFont: [LPStyleManager fontCreditsText]];
         [[self copyrightDateLabel] setTextAlignment: UITextAlignmentCenter];
         
         // Create view hierarchy

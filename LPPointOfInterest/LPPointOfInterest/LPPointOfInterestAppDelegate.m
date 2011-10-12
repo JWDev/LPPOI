@@ -24,9 +24,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Init view controllers
-//    _poiTableViewController = [[LPPOITableViewController alloc] initWithNibName:nil bundle:nil];
-//    _navigationController = [[UINavigationController alloc] initWithRootViewController: [self poiTableViewController]];
-    
     _mainMenuViewController = [[LPPOIMainMenuViewController alloc] initWithNibName:nil bundle:nil];
     _navigationController = [[UINavigationController alloc] initWithRootViewController: [self mainMenuViewController]];
     
@@ -85,15 +82,6 @@
     [_window release];
     [super dealloc];
 }
-
-#pragma mark - Data Loading
-
-- (void) completeAppLaunch
-{
-
-}
-
-
 
 
 @end

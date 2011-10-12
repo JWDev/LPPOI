@@ -9,6 +9,8 @@
 #import "LPPOIDetailsViewController.h"
 
 #import "LPPOIMapViewController.h"
+#import "LPStyleManager.h"
+
 #import "NSDictionary+Additions.h"
 
 #import <QuartzCore/QuartzCore.h>
@@ -16,12 +18,6 @@
 #pragma mark -
 
 @interface LPPOIDetailsViewController() 
-- (UIFont *)titleFont;
-- (UIFont *)textFont;
-
-- (UIColor *)titleColor;
-- (UIColor *)textColor;
-
 - (UILabel *) titleLabel:(NSString *)title atPoint:(CGPoint)origin;
 - (UILabel *) textLabel:(NSString *)text atPoint:(CGPoint)origin;
 
@@ -180,27 +176,27 @@ CGFloat const kTextLabelX = 100.0f;
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-#pragma mark - Styles
-
-- (UIFont *)titleFont
-{
-    return [UIFont fontWithName:@"Helvetica-Bold" size:16];
-}
-
-- (UIFont *)textFont
-{
-    return [UIFont fontWithName:@"Helvetica" size:16];
-}
-
-- (UIColor *)titleColor
-{
-    return [UIColor blackColor];
-}
-
-- (UIColor *)textColor
-{
-    return [UIColor blackColor];
-}
+//#pragma mark - Styles
+//
+//- (UIFont *)titleFont
+//{
+//    return [UIFont fontWithName:@"Helvetica-Bold" size:16];
+//}
+//
+//- (UIFont *)textFont
+//{
+//    return [UIFont fontWithName:@"Helvetica" size:16];
+//}
+//
+//- (UIColor *)titleColor
+//{
+//    return [UIColor blackColor];
+//}
+//
+//- (UIColor *)textColor
+//{
+//    return [UIColor blackColor];
+//}
 
 #pragma mark - View Factory
 
@@ -208,8 +204,8 @@ CGFloat const kTextLabelX = 100.0f;
 {
     UILabel* label = [[UILabel alloc] initWithFrame: CGRectMake(origin.x, origin.y, kTitleLabelWidth, kTitleLabelHeight)];
     label.text = title;
-    label.textColor = [self titleColor];
-    label.font = [self titleFont];
+    label.textColor = [LPStyleManager colorTitle];
+    label.font = [LPStyleManager fontTitle];
     
     return label;
 }
@@ -218,8 +214,8 @@ CGFloat const kTextLabelX = 100.0f;
 {
     UILabel* label = [[UILabel alloc] initWithFrame: CGRectMake(origin.x, origin.y, kTextLabelWidth, kTitleLabelHeight)];
     label.text = text;
-    label.textColor = [self textColor];
-    label.font = [self textFont];
+    label.textColor = [LPStyleManager colorText];
+    label.font = [LPStyleManager fontText];
 
     CGSize textSize = [text sizeWithFont:label.font 
                        constrainedToSize:CGSizeMake(kTextLabelWidth, 100) 
@@ -236,7 +232,7 @@ CGFloat const kTextLabelX = 100.0f;
 
 - (void) mapButtonSelected:(UIButton *)button
 {
-    NSLog(@"mapButtonSelected");
+//    NSLog(@"mapButtonSelected");
     
     LPPOIMapViewController* mapVC = [[LPPOIMapViewController alloc] initWithDictionary:[self dataDict]];
     [[self navigationController] pushViewController:mapVC animated:YES];
