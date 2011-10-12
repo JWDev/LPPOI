@@ -255,8 +255,8 @@
     NSArray* section = [[self sortedSections] objectAtIndex:indexPath.section];
     NSDictionary* poiDict = [section objectAtIndex:indexPath.row];
 
-    cell.textLabel.text = [[poiDict stringForKey: @"name"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    cell.detailTextLabel.text = [poiDict stringForKey: @"type"];
+    [cell.textLabel setText: [[poiDict stringForKey: @"name"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    [cell.detailTextLabel setText: [poiDict stringForKey: @"type"]];
     
     return cell;
 }

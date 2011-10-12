@@ -203,26 +203,26 @@ CGFloat const kTextLabelX = 100.0f;
 - (UILabel *) titleLabel:(NSString *)title atPoint:(CGPoint)origin
 {
     UILabel* label = [[UILabel alloc] initWithFrame: CGRectMake(origin.x, origin.y, kTitleLabelWidth, kTitleLabelHeight)];
-    label.text = title;
-    label.textColor = [LPStyleManager colorTitle];
-    label.font = [LPStyleManager fontTitle];
-    
+    [label setText:title];
+    [label setTextColor: [LPStyleManager colorTitle]];
+    [label setFont: [LPStyleManager fontTitle]];
+
     return label;
 }
 
 - (UILabel *) textLabel:(NSString *)text atPoint:(CGPoint)origin
 {
     UILabel* label = [[UILabel alloc] initWithFrame: CGRectMake(origin.x, origin.y, kTextLabelWidth, kTitleLabelHeight)];
-    label.text = text;
-    label.textColor = [LPStyleManager colorText];
-    label.font = [LPStyleManager fontText];
+    [label setText: text];
+    [label setTextColor: [LPStyleManager colorText]];
+    [label setFont: [LPStyleManager fontText]];
 
     CGSize textSize = [text sizeWithFont:label.font 
                        constrainedToSize:CGSizeMake(kTextLabelWidth, 100) 
                            lineBreakMode:UILineBreakModeWordWrap];
     if (textSize.height > kTitleLabelHeight) {
-        label.numberOfLines = 2;
-        label.frame = CGRectMake(origin.x, origin.y, textSize.width, textSize.height);
+        [label setNumberOfLines: 2];
+        [label setFrame: CGRectMake(origin.x, origin.y, textSize.width, textSize.height)];
     }
     
     return label;

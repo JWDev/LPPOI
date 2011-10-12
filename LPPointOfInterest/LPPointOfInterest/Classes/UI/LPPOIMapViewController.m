@@ -117,11 +117,11 @@
 }
 
 - (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>) annotation {
-    MKPinAnnotationView* annView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"location"];
-    annView.pinColor = MKPinAnnotationColorRed;
-    annView.animatesDrop = TRUE;
+    MKPinAnnotationView* view = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"location"];
+    [view setPinColor: MKPinAnnotationColorRed];
+    [view setAnimatesDrop: YES];
     
-    return annView;
+    return view;
 }
 
 @end
