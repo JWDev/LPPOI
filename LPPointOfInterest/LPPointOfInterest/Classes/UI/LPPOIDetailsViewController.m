@@ -144,6 +144,7 @@ CGFloat const kTextLabelX = 100.0f;
     [reviewWebview setFrame: CGRectMake(kTitleLabelX, y, 300, 480 - y - kTitleSpacerVertical - kNavBarAndStatusBarHeight)];
     [reviewWebview setBackgroundColor: [UIColor clearColor]];
     
+    // TODO: Add html code to change webview text color and background color
     NSDictionary* reviewDict = [[self dataDict] dictionaryForKey:@"review"];
     NSString* summaryString = [reviewDict stringForKey:@"summary"];
     summaryString = [summaryString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
