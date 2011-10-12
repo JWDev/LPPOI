@@ -141,8 +141,8 @@ CGFloat const kTextLabelX = 100.0f;
 
     y += reviewTitleLabel.frame.size.height + kTitleSpacerVertical;
     reviewWebview = [[UIWebView alloc] init];
-    reviewWebview.frame = CGRectMake(kTitleLabelX, y, 300, 480 - y - kTitleSpacerVertical - kNavBarAndStatusBarHeight);
-    reviewWebview.backgroundColor = [UIColor clearColor];
+    [reviewWebview setFrame: CGRectMake(kTitleLabelX, y, 300, 480 - y - kTitleSpacerVertical - kNavBarAndStatusBarHeight)];
+    [reviewWebview setBackgroundColor: [UIColor clearColor]];
     
     NSDictionary* reviewDict = [[self dataDict] dictionaryForKey:@"review"];
     NSString* summaryString = [reviewDict stringForKey:@"summary"];
@@ -161,6 +161,8 @@ CGFloat const kTextLabelX = 100.0f;
     
     [[self view] addSubview: reviewTitleLabel];
     [[self view] addSubview: reviewWebview];
+    
+    [[self view] setBackgroundColor: [LPStyleManager colorBackground]];
 }
 
 - (void)viewDidUnload
@@ -203,9 +205,10 @@ CGFloat const kTextLabelX = 100.0f;
 - (UILabel *) titleLabel:(NSString *)title atPoint:(CGPoint)origin
 {
     UILabel* label = [[UILabel alloc] initWithFrame: CGRectMake(origin.x, origin.y, kTitleLabelWidth, kTitleLabelHeight)];
+    [label setBackgroundColor: [UIColor clearColor]];
     [label setText:title];
-    [label setTextColor: [LPStyleManager colorTitle]];
-    [label setFont: [LPStyleManager fontTitle]];
+    [label setTextColor: [LPStyleManager colorDetailsTitle]];
+    [label setFont: [LPStyleManager fontDetailsTitle]];
 
     return label;
 }
@@ -213,9 +216,10 @@ CGFloat const kTextLabelX = 100.0f;
 - (UILabel *) textLabel:(NSString *)text atPoint:(CGPoint)origin
 {
     UILabel* label = [[UILabel alloc] initWithFrame: CGRectMake(origin.x, origin.y, kTextLabelWidth, kTitleLabelHeight)];
+    [label setBackgroundColor: [UIColor clearColor]];
     [label setText: text];
-    [label setTextColor: [LPStyleManager colorText]];
-    [label setFont: [LPStyleManager fontText]];
+    [label setTextColor: [LPStyleManager colorDetailsText]];
+    [label setFont: [LPStyleManager fontDetailsText]];
 
     CGSize textSize = [text sizeWithFont:label.font 
                        constrainedToSize:CGSizeMake(kTextLabelWidth, 100) 

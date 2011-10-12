@@ -22,8 +22,8 @@
 
 + (UIFont *)fontButtonTitle;
 
-+ (UIFont *)fontTitle;
-+ (UIFont *)fontText;
++ (UIFont *)fontDetailsTitle;
++ (UIFont *)fontDetailsText;
 
 + (UIFont *)fontCreditsTitle;
 + (UIFont *)fontCreditsText;
@@ -35,8 +35,8 @@
 + (UIColor *)colorButtonNormalTitle;
 + (UIColor *)colorButtonSelectedTitle;
 
-+ (UIColor *)colorTitle;
-+ (UIColor *)colorText;
++ (UIColor *)colorDetailsTitle;
++ (UIColor *)colorDetailsText;
 
 + (UIColor *)colorCreditsTitle;
 + (UIColor *)colorCreditsText;

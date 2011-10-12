@@ -19,12 +19,12 @@
     return [UIFont fontWithName:@"Helvetica" size:24];
 }
 
-+ (UIFont *)fontTitle
++ (UIFont *)fontDetailsTitle
 {
     return [UIFont fontWithName:@"Helvetica-Bold" size:16];
 }
 
-+ (UIFont *)fontText
++ (UIFont *)fontDetailsText
 {
     return [UIFont fontWithName:@"Helvetica" size:16];
 }
@@ -56,14 +56,14 @@
     return [UIColor yellowColor];
 }
 
-+ (UIColor *)colorTitle
++ (UIColor *)colorDetailsTitle
 {
-    return [UIColor blackColor];
+    return [UIColor whiteColor];
 }
 
-+ (UIColor *)colorText
++ (UIColor *)colorDetailsText
 {
-    return [UIColor blackColor];
+    return [UIColor whiteColor];
 }
 
 + (UIColor *)colorCreditsTitle

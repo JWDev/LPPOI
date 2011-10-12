@@ -190,7 +190,7 @@
 		<string>IDEWorkspaceTabControllerDesignAreaSplitView</string>
 		<string>IDEShowUtilities</string>
 		<string>AssistantEditorsLayout</string>
-		<string>LPPOIMainMenuViewController.m</string>
+		<string>LPPOIDetailsViewController.m</string>
 		<true/>
 		<dict>
 			<key>$class</key>
@@ -869,7 +869,7 @@
 				<integer>88</integer>
 			</dict>
 		</dict>
-		<string>LPPOIMainMenuViewController.m</string>
+		<string>LPPOIDetailsViewController.m</string>
 		<dict>
 			<key>$classes</key>
 			<array>
@@ -964,7 +964,7 @@
 				<integer>101</integer>
 			</dict>
 			<key>NS.string</key>
-			<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOIMainMenuViewController.m</string>
+			<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOIDetailsViewController.m</string>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -1043,10 +1043,10 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>HideAllIssues</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
-		<real>340091049.37463099</real>
-		<string>{5257, 1540}</string>
-		<string>{6481, 0}</string>
-		<string>@implementation LPPOIMainMenuViewController</string>
+		<real>340091865.81051397</real>
+		<string>{3226, 2527}</string>
+		<string>{5187, 0}</string>
+		<string>-viewDidLoad</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
 		<dict>
 			<key>$class</key>
@@ -1065,7 +1065,7 @@
 				<integer>115</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOIMainMenuViewController.m</string>
+		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOIDetailsViewController.m</string>
 		<dict>
 			<key>$classes</key>
 			<array>
@@ -5002,9 +5002,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>340090547.20777398</real>
-		<string>{0, 920}</string>
-		<string>{345, 0}</string>
+		<real>340091550.83111399</real>
+		<string>{471, 820}</string>
+		<string>{1138, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5242,7 +5242,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>340091049.37276101</real>
+		<real>340091073.38949698</real>
 		<string>{5257, 1540}</string>
 		<string>{6481, 0}</string>
 		<dict>
@@ -5290,9 +5290,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>340090953.69853002</real>
-		<string>{666, 1569}</string>
-		<string>{1112, 0}</string>
+		<real>340091865.80965197</real>
+		<string>{3226, 2527}</string>
+		<string>{5187, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7147,7 +7147,7 @@
 				<integer>599</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>340091001.58069998</real>
+			<real>340091825.02804202</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -7158,7 +7158,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 10:43 PM</string>
+		<string>Today at 10:57 PM</string>
 		<integer>106</integer>
 		<dict>
 			<key>$class</key>
@@ -7241,7 +7241,7 @@
 				<integer>605</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOIMainMenuViewController.m</string>
+		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOIDetailsViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7259,7 +7259,7 @@
 				<integer>607</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOITableViewController.m</string>
+		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/Utilities/LPStyleManager.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7277,7 +7277,7 @@
 				<integer>609</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOIDetailsViewController.m</string>
+		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/Utilities/LPStyleManager.h</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7295,7 +7295,7 @@
 				<integer>611</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOIMapViewController.m</string>
+		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOIMainMenuViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7313,7 +7313,7 @@
 				<integer>613</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOIMapAnnotation.m</string>
+		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOITableViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7331,7 +7331,7 @@
 				<integer>615</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOICreditsViewController.m</string>
+		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOIMapViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7349,7 +7349,7 @@
 				<integer>617</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/Utilities/LPStyleManager.m</string>
+		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOIMapAnnotation.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7367,7 +7367,7 @@
 				<integer>619</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/Utilities/LPStyleManager.h</string>
+		<string>file://localhost/Users/worbyjj/work/testProjects/LPPOI/LPPointOfInterest/LPPointOfInterest/Classes/UI/LPPOICreditsViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
